@@ -1,0 +1,10 @@
+<div class="landing-page w-100" *ngIf="books$ | async as books">
+    <div class="container row m-auto">
+        <div class="col-sm-3 col-sm-4 mb-3" *ngFor="let book of books.data">
+            <mat-card class="thumbnail mat-elevation-z2 h-100">
+            </mat-card>
+        </div>
+    </div>
+    
+    <button mat-raised-button color="primary" routerLink="/dashboard">Proceed</button>
+</div>
